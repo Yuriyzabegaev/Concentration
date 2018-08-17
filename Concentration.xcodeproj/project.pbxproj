@@ -12,6 +12,8 @@
 		0BC397FA2125EE0D007398AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC397F82125EE0D007398AA /* Main.storyboard */; };
 		0BC397FC2125EE11007398AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC397FB2125EE11007398AA /* Assets.xcassets */; };
 		0BC397FF2125EE11007398AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC397FD2125EE11007398AA /* LaunchScreen.storyboard */; };
+		0BC398072125EFC9007398AA /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC398062125EFC9007398AA /* Concentration.swift */; };
+		0BC39809212614D1007398AA /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC39808212614D1007398AA /* Themes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0BC397FB2125EE11007398AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BC397FE2125EE11007398AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC398002125EE11007398AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BC398062125EFC9007398AA /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		0BC39808212614D1007398AA /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0BC397FB2125EE11007398AA /* Assets.xcassets */,
 				0BC397FD2125EE11007398AA /* LaunchScreen.storyboard */,
 				0BC398002125EE11007398AA /* Info.plist */,
+				0BC398062125EFC9007398AA /* Concentration.swift */,
+				0BC39808212614D1007398AA /* Themes.swift */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC397F72125EE0D007398AA /* ViewController.swift in Sources */,
+				0BC39809212614D1007398AA /* Themes.swift in Sources */,
 				0BC397F52125EE0D007398AA /* AppDelegate.swift in Sources */,
+				0BC398072125EFC9007398AA /* Concentration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JRZ88CK8UX;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JRZ88CK8UX;
 				INFOPLIST_FILE = Concentration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

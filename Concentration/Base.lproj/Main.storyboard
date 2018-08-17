@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,207 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8w-gB-opL">
+                                <rect key="frame" x="16" y="20" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JjH-Tl-b74"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pY-cp-BXO">
+                                <rect key="frame" x="102" y="20" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d07-HY-yrL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-dL-Z9N">
+                                <rect key="frame" x="188" y="20" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0e-GV-iLS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gyu-xD-5bM">
+                                <rect key="frame" x="274" y="20" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ox3-cN-aoD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4u-YK-5MV">
+                                <rect key="frame" x="16" y="121" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yj-gF-igZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi5-6X-OIC">
+                                <rect key="frame" x="102" y="121" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x6e-Tr-cwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLt-G3-slX">
+                                <rect key="frame" x="188" y="121" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnE-m0-tB5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT2-tS-6cv">
+                                <rect key="frame" x="274" y="121" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5jM-gN-zKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fB-uQ-L55">
+                                <rect key="frame" x="16" y="222" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ph9-Pt-UMx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-U9-KL8">
+                                <rect key="frame" x="102" y="222" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JpV-LG-er6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzR-t8-vLJ">
+                                <rect key="frame" x="188" y="222" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdt-ZV-L1K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gq2-of-0AB">
+                                <rect key="frame" x="274" y="222" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEA-Ab-IgU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMo-Jm-raf">
+                                <rect key="frame" x="16" y="323" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y11-Yn-bnh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMn-jn-apq">
+                                <rect key="frame" x="102" y="323" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whF-Df-mB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlh-HX-Vb2">
+                                <rect key="frame" x="188" y="323" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cx7-7j-FS8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQq-Uo-HOf">
+                                <rect key="frame" x="274" y="323" width="85" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🖕"/>
+                                <connections>
+                                    <action selector="cardIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gud-J2-skk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcf-vh-sfH">
+                                <rect key="frame" x="16" y="424" width="343" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="New Game"/>
+                                <connections>
+                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Hi-St-ds2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QK6-E9-mfK">
+                                <rect key="frame" x="16" y="495" width="171" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLM-sC-5QO">
+                                <rect key="frame" x="188" y="495" width="171" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="flipCounterLabel" destination="GLM-sC-5QO" id="M27-KT-vO1"/>
+                        <outlet property="newGameButton" destination="zcf-vh-sfH" id="AmI-Lo-n9k"/>
+                        <outlet property="scoreLabel" destination="QK6-E9-mfK" id="0l9-ha-npU"/>
+                        <outletCollection property="cards" destination="gq2-of-0AB" collectionClass="NSMutableArray" id="BZr-Dp-Omk"/>
+                        <outletCollection property="cards" destination="ZT2-tS-6cv" collectionClass="NSMutableArray" id="Wpj-kF-1jq"/>
+                        <outletCollection property="cards" destination="Gyu-xD-5bM" collectionClass="NSMutableArray" id="vw2-ba-ScM"/>
+                        <outletCollection property="cards" destination="xQq-Uo-HOf" collectionClass="NSMutableArray" id="i4W-rj-ufH"/>
+                        <outletCollection property="cards" destination="Jlh-HX-Vb2" collectionClass="NSMutableArray" id="uut-8j-rT0"/>
+                        <outletCollection property="cards" destination="EzR-t8-vLJ" collectionClass="NSMutableArray" id="bVp-YT-LCr"/>
+                        <outletCollection property="cards" destination="dLt-G3-slX" collectionClass="NSMutableArray" id="BHX-AQ-Iwd"/>
+                        <outletCollection property="cards" destination="aPr-dL-Z9N" collectionClass="NSMutableArray" id="gBf-bp-Xm5"/>
+                        <outletCollection property="cards" destination="8pY-cp-BXO" collectionClass="NSMutableArray" id="rKo-NU-e92"/>
+                        <outletCollection property="cards" destination="zi5-6X-OIC" collectionClass="NSMutableArray" id="dDF-pQ-2Xh"/>
+                        <outletCollection property="cards" destination="bBJ-U9-KL8" collectionClass="NSMutableArray" id="4Cy-Lk-Q6b"/>
+                        <outletCollection property="cards" destination="iMn-jn-apq" collectionClass="NSMutableArray" id="yol-bY-8gN"/>
+                        <outletCollection property="cards" destination="KMo-Jm-raf" collectionClass="NSMutableArray" id="Wrv-h5-2On"/>
+                        <outletCollection property="cards" destination="1fB-uQ-L55" collectionClass="NSMutableArray" id="OT5-9X-cg5"/>
+                        <outletCollection property="cards" destination="A4u-YK-5MV" collectionClass="NSMutableArray" id="e2y-6C-0iP"/>
+                        <outletCollection property="cards" destination="e8w-gB-opL" collectionClass="NSMutableArray" id="Eu9-YQ-5wr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
