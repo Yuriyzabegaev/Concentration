@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationVC: UIViewController {
     
     lazy var game = Concentration(numberOfPairsOfCards: (self.cards.count+1)/2)
-    var emojiArray:[String]!
-    private var cardEmojies : [Int:String] = [:]
-    var currentTheme: ColorTheme!
+    private var cardEmojies: [Int:String] = [:]
+    var currentTheme: Theme! {
+        didSet {
+            updateTheme()
+        }
+    }
+    var emojies: String = ""
 
     @IBOutlet var cards: [UIButton]!
     @IBOutlet weak var newGameButton: UIButton!
@@ -27,14 +31,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startNewGame() {
+        if currentTheme == nil {
+            currentTheme = ConcentrationThemeChooserVCViewController.themes[0]
+        }
         game.startNewGame()
-        setNewTheme()
+        updateTheme()
         updateUI()
     }
     
     override func viewDidLoad() {
-        setNewTheme()
-        updateUI()
+        startNewGame()
     }
     
     private func updateUI() {
@@ -56,32 +62,40 @@ class ViewController: UIViewController {
     
     private func closeCard(atIndex index: Int) {
         let card = cards[index]
-        card.backgroundColor = currentTheme.colors.closedCardColor
+        card.backgroundColor = currentTheme.closedCardColor
         card.setTitle("", for: .normal)
     }
     
     private func openCard(atIndex index: Int) {
         let card = cards[index]
-        card.backgroundColor = currentTheme.colors.openedCardColor
+        card.backgroundColor = currentTheme.openedCardColor
         let currentCardEmoji = getCardEmoji(forID: game.cards[index].id)
         card.setTitle(currentCardEmoji, for: .normal)
     }
     
     private func getCardEmoji(forID id:Int) -> String {
         if cardEmojies[id-1] == nil {
-            cardEmojies[id-1] = emojiArray.popLast()!
+            cardEmojies[id-1] = String(emojies[emojies.index(before: emojies.endIndex)])
+            emojies = String(emojies.dropLast())
         }
         return cardEmojies[id-1]!
     }
     
-    private func setNewTheme() {
-        currentTheme = ColorTheme.random()
-        
-        self.view.backgroundColor = currentTheme.colors.backgroundColor
-        emojiArray = currentTheme.colors.emojiPack
-        newGameButton.setTitleColor(currentTheme.colors.textColor,
+    private func updateTheme() {
+        if cards != nil {
+            for index in cards.indices {
+                if game.cards[index].isOpen || game.cards[index].isCompleted {
+                    openCard(atIndex: index)
+                } else {
+                    closeCard(atIndex: index)
+                }
+            }
+        }
+        emojies = currentTheme.emojiPack
+        self.view.backgroundColor = currentTheme.backgroundColor
+        newGameButton.setTitleColor(currentTheme.textColor,
                                     for: .normal)
-        scoreLabel.textColor = currentTheme.colors.textColor
-        flipCounterLabel.textColor = currentTheme.colors.textColor
+        scoreLabel.textColor = currentTheme.textColor
+        flipCounterLabel.textColor = currentTheme.textColor
     }
 }
